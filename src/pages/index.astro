@@ -1,5 +1,6 @@
 ---
 import Layout from '../components/Layout.astro';
+import background from '../images/background-hipster-ia.png';
 import rocket from '../images/logo-twitch.svg';
 import email from '../images/mail-outline.svg';
 import calendar from '../images/calendar-outline.svg';
@@ -11,12 +12,19 @@ import calendar from '../images/calendar-outline.svg';
   <section class="wrapper">
     <main>
       <h1>
-        Le rendez-vous <span class="highlight">échecs</span> et <span class="highlight2">intelligence artificielle</span>,
-        sur <span class="highlight">Montréal</span>, saison 1, <span
+        Le rendez-vous <span class="highlight">échecs</span> et <span
+          class="highlight2">intelligence artificielle</span
+        >, sur <span class="highlight">Montréal</span>, saison 1, <span
           class="highlight">été 2023</span
         >
       </h1>
       <div class="cit">...celui que l'on attend tous</div>
+      <img
+        class="bkg-main"
+        src={background}
+        alt="Logo généré par l'IA - Midjourney"
+        title="Logo généré par l'IA - Midjourney"
+      />
       <section>
         <h2>Venez passer un moment convivial.</h2>
         <p>
@@ -217,7 +225,7 @@ import calendar from '../images/calendar-outline.svg';
   </section>
 
   <footer>
-    <p>&copy; Damien Lamoureux. Tous droits réservés.</p>
+    <p>&copy; Damien Lamoureux. Tous droits non réservés.</p>
   </footer>
 
   <style>
@@ -266,6 +274,12 @@ import calendar from '../images/calendar-outline.svg';
     footer {
       text-align: center;
       color: #999;
+    }
+    .bkg-main {
+      display: block;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
     }
 
     /* Styles pour le main */
