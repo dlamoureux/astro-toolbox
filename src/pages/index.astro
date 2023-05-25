@@ -4,6 +4,7 @@ import background from '../images/background-hipster-ia.png';
 import rocket from '../images/logo-twitch.svg';
 import email from '../images/mail-outline.svg';
 import calendar from '../images/calendar-outline.svg';
+import FeedbackForm from '../components/FeedbackForm.astro';
 ---
 
 <Layout
@@ -98,25 +99,24 @@ import calendar from '../images/calendar-outline.svg';
           </li>
         </ul>
         <p>
-          Si vous souhaitez participer à cette session enrichissante, veuillez
-          nous contacter par email:
+          Vous souhaitez participer à cette session enrichissante&nbsp;? Contactez moi par courriel:
+        </p>
+        <a href="mailto:dlamoureux.web@gmail.com" class="link-email">
+          <img class="link-emailImage" src={email} alt="icon email" />
+          Envoyer un e-mail</a
+        >
+        <p>Ou simplement en remplissant le formulaire suivant&nbsp;:</p>
+        <FeedbackForm />
+        <p>
+          Nous vous fournirons plus d'informations sur l'événement et nous vous
+          réserverons une place, une partie, un ribs.
         </p>
         <p>
-          <a href="mailto:dlamoureux.web@gmail.com" class="link-email">
-            <img class="link-emailImage" src={email} alt="icon email" />
-            Envoyer un e-mail</a
-          >
-          <p>
-            Nous vous fournirons plus d'informations sur l'événement et nous
-            vous réserverons une place, une partie, un ribs.
-          </p>
-          <p>
-            Ne manquez pas cette occasion de rencontrer des esprits curieux, de
-            découvrir de nouvelles idées et de développer votre passion pour
-            l'intelligence artificielle et les échecs.
-          </p>
-          <div class="cit">...ia ia o</div>
+          Ne manquez pas cette occasion de rencontrer des esprits curieux, de
+          découvrir de nouvelles idées et de développer votre passion pour
+          l'intelligence artificielle et les échecs.
         </p>
+        <div class="cit">...ia ia o</div>
       </section>
       <section>
         <h2>Rejoignez-nous sur Twitch</h2>
