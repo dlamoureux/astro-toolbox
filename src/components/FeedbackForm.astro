@@ -2,11 +2,11 @@
 import send from '../images/paper-plane-solid.svg';
 ---
 
-<div class="wannajoin-form">
+<div class="feedback-form">
   <form
     netlify
     netlify-honeypot
-    name="wannajoin"
+    name="feedback"
     method="POST"
     action="/success"
   >
@@ -17,20 +17,16 @@ import send from '../images/paper-plane-solid.svg';
     </p>
     <input type="hidden" name="form-name" value="feedback" />
     <label for="name">Nom</label>
-    <input id="name" type="text" name="name" required />
-    <label for="email">Courriel</label>
+    <input id="name" type="text" name="name" />
+    <label for="email">Email</label>
     <input id="email" type="email" name="email" required />
-    <label for="feedback">Un commentaire pour nous aider ?</label>
-    <textarea id="feedback" wrap="soft" name="feedback"></textarea>
+    <label for="feedback">Court message</label>
+    <textarea id="feedback" wrap="soft" name="feedback" required></textarea>
     <button type="submit">
-      <img
-        class="action__buttonImg"
-        src={send}
-      />
-      Envoyer</button>
+      <img class="action__buttonImg" src={send} />Envoyer</button
+    >
   </form>
 </div>
-
 <style>
   .action__buttonImg {
     height: 32px;
