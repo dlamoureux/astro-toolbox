@@ -27,7 +27,14 @@ import FeedbackForm from '../components/FeedbackForm.astro';
         title="Logo généré par l'IA - Midjourney"
       />
       <section>
-        <h2>Venez passer un moment convivial.</h2>
+        <div class="subtitle--withicon">
+          <img
+            class="i-calender-outline"
+            src={calendar}
+            alt="Date du prochaine evenement"
+          />
+          <h2>4 Aout 2023, Ilot Fizz 375 Rue de Castelnau</h2>
+        </div>
         <p>
           Vous êtes passionné par l'intelligence artificielle&nbsp;? Vous
           souhaitez vous détendre après une longue journée de travail et
@@ -62,18 +69,9 @@ import FeedbackForm from '../components/FeedbackForm.astro';
       </section>
 
       <section>
-        <div class="subtitle--withicon">
-          <img
-            class="i-calender-outline"
-            src={calendar}
-            alt="Date du prochaine evenement"
-          />
-          <h2>18 Juillet 2023 rue Castelnau en face des givrés à 18h30 ( au spot fizz ) </h2>
-        </div>
-
+        <h2>Venez passer un moment convivial.</h2>
         <p>
-          Notre prochaine session du rendez-vous échecs et intelligence
-          artificielle aura lieu le 15 juin 2023. C'est l'occasion idéale de
+          C'est l'occasion idéale de
           rencontrer d'autres passionnés, d'échanger des idées avec des
           personnes vraiment sympatiques.
         </p>
